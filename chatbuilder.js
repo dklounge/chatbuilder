@@ -5,6 +5,8 @@ for (var i = 0; i < array.length; i++) {
 	return array[i];}
 };
 
+// test
+
 // Method to display chat to Client
 
 
