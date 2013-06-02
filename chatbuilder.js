@@ -1,7 +1,8 @@
 // string iterator to pass as argument to Chat.fetch
 var _each = function(array) {
 for (var i = 0; i < array.length; i++) {
-  console.log(array[i]);}
+  console.log(array[i]);
+	return array[i];}
 };
 
 // Method to display chat to Client
