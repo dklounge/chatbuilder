@@ -5,7 +5,11 @@ for (var i = 0; i < array.length; i++) {
 	return array[i];}
 };
 
-// test
+// to return Chat.fetch messages
+var getValue = function getValue() {
+  var message = Chat.fetch(_each);
+  return message;
+};
 
 // Method to display chat to Client
 
