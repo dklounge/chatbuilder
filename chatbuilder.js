@@ -1,15 +1,12 @@
-// string iterator to pass as argument to Chat.fetch
+// iterator to pass as argument to Chat.fetch
 var _each = function(array) {
 for (var i = 0; i < array.length; i++) {
-  console.log(array[i]);
-	return array[i];}
+  console.log(array[array.length-1]);
+  return array[array.length-1];}
 };
 
-// to return Chat.fetch messages
-var getValue = function getValue() {
-  var message = Chat.fetch(_each);
-  return message;
-};
+// Perform an asynchronous http request using jQuery
+var getValue = $.ajax(Chat.fetch(_each));
 
 // Method to display chat to Client
 
