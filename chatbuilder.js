@@ -8,6 +8,11 @@ for (var i = 0; i < array.length; i++) {
 // Perform an asynchronous http request using jQuery
 var getValue = $.ajax(Chat.fetch(_each));
 
+var getMessage = function() {
+  var message = Chat.fetch(_each);
+  return message;
+}
+
 // Method to display chat to Client
 
 
