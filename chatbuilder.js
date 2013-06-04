@@ -7,17 +7,10 @@ var _each = function(array) {
 
 // Implementation of setInterval - use quotes - setInterval("function()", 3000);
 
-// Perform an asynchronous http request using jQuery
-// var getValue = $.ajax(Chat.fetch(_each));
+// jQuery to grab button element and event listener
 
-// var getMessage = function() {
-//   var message = Chat.fetch(_each);
-//   return message;
-// };
-
-// Method to display chat to Client
-
-
-// Method to fetch chat from the server
-
-
+$(document).ready(function() {
+  $('.send').click(function() {
+    // Chat.send($('.draft').val());
+  });
+});
